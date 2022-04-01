@@ -14,6 +14,8 @@
 
 // console.log(scopeTest(false));
 
+// Exercicio 2
+
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 const orderList = oddsAndEvens.sort();
@@ -21,3 +23,11 @@ const orderList = oddsAndEvens.sort();
 
 
 console.log(`Os números ${orderList} se encontram ordenados de forma crescente`); // será necessário alterar essa linha 😉
+
+// Exercicio 3
+
+const factorial = (n) => (n === 0) || (n === 1) ? 1 : (n * factorial(n - 1));
+
+console.log(factorial(4));
+
+// fonte: https://stackoverflow.com/questions/51292639/how-to-make-a-javascript-factorial-function
