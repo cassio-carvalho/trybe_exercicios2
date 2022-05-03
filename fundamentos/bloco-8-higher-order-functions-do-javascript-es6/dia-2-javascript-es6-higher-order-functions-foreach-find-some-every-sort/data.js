@@ -101,8 +101,9 @@ const books = [
 
 // Exercicio 5
 
-function everyoneWasBornOnSecXX() {
-  return books.every((book) => (book.author.birthYear > 1900 && book.author.birthYear <= 2000));
-}
+// function everyoneWasBornOnSecXX() {
+//   return books.every((book) => (book.author.birthYear > 1900 && book.author.birthYear <= 2000));
+// }
 
-console.log(everyoneWasBornOnSecXX());
+// console.log(everyoneWasBornOnSecXX());
+
