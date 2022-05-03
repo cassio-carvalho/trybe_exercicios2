@@ -71,14 +71,38 @@ const books = [
 
 // Exercicio 2:
 
-function smallerName() {
-  let nameBook = books[0].name;
-  books.forEach((book) => {
-  if (book.name.length < nameBook.length) {
-    nameBook = book.name;
-    } 
-  })
-  return nameBook;
+// function smallerName() {
+//   let nameBook = books[0].name;
+//   books.forEach((book) => {
+//   if (book.name.length < nameBook.length) {
+//     nameBook = book.name;
+//     } 
+//   })
+//   return nameBook;
+// }
+
+// console.log(smallerName());
+
+// Exercicio 3
+
+// function getNamedBook() {
+//   return books.find((book) => book.name.length === 26);
+// }
+
+// console.log(getNamedBook());
+
+// Exercicio 4
+
+// function booksOrderedByReleaseYearDesc() {
+//   return books.sort((book1, book2) => book2.releaseYear - book1.releaseYear);
+// }
+
+// console.log(booksOrderedByReleaseYearDesc());
+
+// Exercicio 5
+
+function everyoneWasBornOnSecXX() {
+  return books.every((book) => (book.author.birthYear > 1900 && book.author.birthYear <= 2000));
 }
 
-console.log(smallerName());
+console.log(everyoneWasBornOnSecXX());
