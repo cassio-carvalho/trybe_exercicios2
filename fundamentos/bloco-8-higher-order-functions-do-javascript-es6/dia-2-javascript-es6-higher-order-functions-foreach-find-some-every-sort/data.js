@@ -107,3 +107,17 @@ const books = [
 
 // console.log(everyoneWasBornOnSecXX());
 
+// Exercicio 6
+
+function oldBooks() {
+  let books60 = [];
+  
+  books.forEach((book) => {
+    if (book.releaseYear <= (2022 - 60)) {
+      books60.push(book.name);
+    }
+  })
+  return books60;
+}
+
+console.log(oldBooks());
