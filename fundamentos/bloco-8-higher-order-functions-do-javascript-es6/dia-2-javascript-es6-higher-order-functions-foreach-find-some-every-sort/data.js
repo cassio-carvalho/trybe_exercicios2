@@ -61,4 +61,24 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+// Exercicio 1:
+// function authorBornIn1947() {
+//   const bornIn1947 = books.find((book) => book.author.birthYear === 1947);
+//   return bornIn1947.author;
+// }
+
+// console.log(authorBornIn1947());
+
+// Exercicio 2:
+
+function smallerName() {
+  let nameBook = books[0].name;
+  books.forEach((book) => {
+  if (book.name.length < nameBook.length) {
+    nameBook = book.name;
+    } 
+  })
+  return nameBook;
+}
+
+console.log(smallerName());
