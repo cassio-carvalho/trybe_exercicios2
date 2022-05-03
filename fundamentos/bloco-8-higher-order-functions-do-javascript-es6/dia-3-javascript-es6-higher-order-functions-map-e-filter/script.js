@@ -65,3 +65,20 @@ const books = [
 
 // Exercicio 1
 
+// function formatedBookNames() {
+//   return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
+// }
+// console.log(formatedBookNames());
+
+// Exercicio 2
+
+function nameAndAge() {
+  return books.map((book) => 
+    ({
+      author: book.author.name,
+      age: book.releaseYear - book.author.birthYear,
+    }))
+    .sort((item1, item2) => item1.age - item2.age);
+}
+
+console.log(nameAndAge());
