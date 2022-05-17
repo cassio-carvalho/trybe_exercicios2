@@ -109,15 +109,11 @@ const books = [
 
 // Exercicio 6
 
-function oldBooks() {
-  let books60 = [];
-  
-  books.forEach((book) => {
-    if (book.releaseYear <= (2022 - 60)) {
-      books60.push(book.name);
-    }
-  })
-  return books60;
+ 
+const is80s = (book) => (book.releaseYear > 1979 && book.releaseYear <= 1989);
+
+function someBookWasReleaseOnThe80s(books) {
+  return books.some(is80s);
 }
 
-console.log(oldBooks());
+console.log(someBookWasReleaseOnThe80s(books));
