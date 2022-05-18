@@ -16,6 +16,7 @@ const books = [
     author: {
       name: 'J. R. R. Tolkien',
       birthYear: 1892,
+      // birthYear: 1948,
     },
     releaseYear: 1954,
   },
@@ -110,10 +111,16 @@ const books = [
 // Exercicio 6
 
  
-const is80s = (book) => (book.releaseYear > 1979 && book.releaseYear <= 1989);
+// const is80s = (book) => (book.releaseYear > 1979 && book.releaseYear <= 1989);
 
-function someBookWasReleaseOnThe80s(books) {
-  return books.some(is80s);
-}
+// function someBookWasReleaseOnThe80s(books) {
+//   return books.some(is80s);
+// }
 
-console.log(someBookWasReleaseOnThe80s(books));
+// console.log(someBookWasReleaseOnThe80s(books));
+
+// Exercicio 7
+
+const authorUnique = (author) => author.find((birthYear) => birthYear.author.birthYear === author.author.birthYear);
+
+console.log(authorUnique(books));
